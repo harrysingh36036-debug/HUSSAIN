@@ -11,7 +11,15 @@ No build step, no framework — plain HTML/CSS/JS.
 | `index.html` | All page content, inline SVG icon set, LocalBusiness schema |
 | `styles.css` | Design tokens + full responsive layout (375px → 1440px) |
 | `script.js` | Service cards + details modal, brand marquee, booking form + validation, coverage chips, mobile nav, scroll reveals |
+| `fonts/` | Self-hosted Poppins + Open Sans (woff2, latin subset) — no external requests |
 | `README.md` | This file |
+
+## Performance
+
+Fonts are **self-hosted** (see `fonts/`) and the three critical ones are preloaded in
+`index.html`, so there are zero external requests and no font-swap layout shift.
+If you ever want to swap fonts: replace the files in `fonts/` and update the
+`@font-face` rules at the top of `styles.css`.
 
 ## Preview
 

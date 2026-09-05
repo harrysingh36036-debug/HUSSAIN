@@ -6,9 +6,10 @@
   <title>Smart Home Repair | AC &amp; Appliance Service in Kochi (Kakkanad)</title>
   <meta name="description" content="Kochi's trusted AC and home appliance repair company. Certified technicians, genuine spare parts, transparent quotes and a 90-day warranty — serving Kakkanad, Edappally, Vyttila and 30+ areas across Ernakulam.">
   <meta name="theme-color" content="#0d1b40">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Self-hosted fonts — preload the critical ones (hero H1, headings, body) -->
+  <link rel="preload" href="fonts/poppins-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/open-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.classList.add('js');</script>
 
@@ -191,7 +192,7 @@
           <p class="sub">Our technicians are certified on all leading brands available in India — older models and the latest releases.</p>
         </header>
       </div>
-      <div class="marquee reveal" aria-label="Brands we service">
+      <div class="marquee reveal" role="group" aria-label="Brands we service">
         <div class="marquee-inner">
           <ul class="marquee-track" id="marqueeA">
             <li>Daikin</li><li>LG</li><li>Samsung</li><li>Voltas</li><li>Blue Star</li><li>Carrier</li>
@@ -244,7 +245,7 @@
           <h2>What our customers say</h2>
           <div class="rating-summary">
             <span class="rating-big">4.9</span>
-            <span class="rating-stars" aria-label="Rated 4.9 out of 5">
+            <span class="rating-stars" role="img" aria-label="Rated 4.9 out of 5">
               <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
             </span>
             <p>from 12,000+ verified customer reviews</p>
@@ -253,32 +254,32 @@
 
         <div class="review-grid">
           <figure class="review reveal">
-            <div class="stars" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+            <div class="stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
             <blockquote>"My AC stopped cooling in peak summer. The technician arrived the same afternoon, topped up the gas, and the cooling was restored in under an hour. Excellent, quick service."</blockquote>
             <figcaption><strong>Neha Rajeev</strong><span>Kakkanad</span></figcaption>
           </figure>
           <figure class="review reveal">
-            <div class="stars" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+            <div class="stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
             <blockquote>"The washing machine drum was making a loud noise. The technician diagnosed a bearing issue in minutes and fixed it in under an hour. Transparent pricing, no hidden costs."</blockquote>
             <figcaption><strong>Rahul Menon</strong><span>Palarivattom</span></figcaption>
           </figure>
           <figure class="review reveal">
-            <div class="stars" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+            <div class="stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
             <blockquote>"Took the annual AMC plan for 3 ACs in my office. Regular servicing, priority support and the team is always punctual. Best money I've spent on maintenance."</blockquote>
             <figcaption><strong>Vikram Nair</strong><span>Vyttila</span></figcaption>
           </figure>
           <figure class="review reveal">
-            <div class="stars" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+            <div class="stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
             <blockquote>"Quick response and honest diagnostics. They fixed my Samsung double-door fridge that two other shops said needed a compressor change. Saved me a lot of money."</blockquote>
             <figcaption><strong>Pankaj Sharma</strong><span>Edappally</span></figcaption>
           </figure>
           <figure class="review reveal">
-            <div class="stars" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+            <div class="stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
             <blockquote>"Called for a geyser installation at 9 AM and it was done by 11 AM. Very clean work, zero mess, and the quoted price was honoured exactly."</blockquote>
             <figcaption><strong>Anita Pillai</strong><span>Thrikkakara</span></figcaption>
           </figure>
           <figure class="review reveal">
-            <div class="stars" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+            <div class="stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
             <blockquote>"Reliable and professional. Their AMC has kept my washing machine and microwave running smoothly for three years now — worth every rupee."</blockquote>
             <figcaption><strong>Sandeep Varghese</strong><span>Maradu</span></figcaption>
           </figure>

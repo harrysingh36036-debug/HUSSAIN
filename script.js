@@ -337,7 +337,16 @@
         }
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    targets.forEach(function (t) { io.observe(t); });
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    targets.forEach(function (t) {
+      // Show above-the-fold content immediately so first paint is not
+      // delayed by the observer callback (keeps LCP at first paint).
+      if (t.getBoundingClientRect().top <= vh) {
+        t.classList.add('in');
+      } else {
+        io.observe(t);
+      }
+    });
   }
 
   /* ============================================================

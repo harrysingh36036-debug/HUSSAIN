@@ -4,6 +4,47 @@
    Fonts: Poppins (headings) · Open Sans (body)
    ============================================================ */
 
+/* ---------- Self-hosted fonts (no external requests) ----------
+   Files in /fonts, subset to latin. font-display: swap keeps
+   text visible instantly; preloaded criticals in index.html. */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/poppins-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/poppins-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/poppins-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('fonts/poppins-800.woff2') format('woff2');
+}
+/* Open Sans is served as a single variable font (weights 400-700) */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('fonts/open-sans.woff2') format('woff2-variations'),
+       url('fonts/open-sans.woff2') format('woff2');
+}
+
 /* ---------- Design tokens ---------- */
 :root {
   /* Brand */
